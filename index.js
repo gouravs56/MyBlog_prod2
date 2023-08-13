@@ -21,7 +21,7 @@ const apiKey = process.env.API_KEY;
 
 
 // API route to fetch news data
-app.get("/v1/news", async (req, res) => {
+app.get("/v1", async (req, res) => {
   try {
     const response = await axios.get(
       `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`
