@@ -21,7 +21,7 @@ app.get('*', (req, res) => {
 
 
 // API route to fetch news data
-app.get("", async (req, res) => {
+app.get("/api/news", async (req, res) => {
   try {
     const response = await axios.get(
       `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`
