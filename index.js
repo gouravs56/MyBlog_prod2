@@ -9,7 +9,7 @@ dotenv.config();
 const apiKey = process.env.API_KEY;
 
  app.use(cors({
-  origin: "https://my-news-blog.cyclic.app/", // Allow requests from this origin
+  origin: "https://dull-gold-wasp-gear.cyclic.app/", // Allow requests from this origin
   methods: "GET", // Allow only GET requests
 }));
 
