@@ -14,14 +14,14 @@ const apiKey = process.env.API_KEY;
 }));
 
 // static files
-app.use(express.static(path.join(__dirname,'./client/dist')))
+app.use(express.static(path.join(__dirname,'./client/dist'))) 
 app.get('*', (req, res) => {
   res.sendFile (path.join(__dirname,'./client/dist/index.html'))
 });
 
 
 // API route to fetch news data
-app.get("/v1", async (req, res) => {
+app.get("", async (req, res) => {
   try {
     const response = await axios.get(
       `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`
